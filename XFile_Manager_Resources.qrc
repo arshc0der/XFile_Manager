@@ -24,5 +24,6 @@
         <file>icons/Developer.svg</file>
         <file>icons/License.svg</file>
         <file>icons/Github.svg</file>
+        <file>logo.ico</file>
     </qresource>
 </RCC>

@@ -28,3 +28,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     XFile_Manager_Resources.qrc
+    RC_ICONS = logo.ico

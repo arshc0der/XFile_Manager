@@ -17,6 +17,6 @@ About_XFile_Manager::~About_XFile_Manager()
 
 void About_XFile_Manager::on_contribute_button_clicked()
 {
-    QDesktopServices::openUrl(QUrl("https://github.com/arshc0der"));
+    QDesktopServices::openUrl(QUrl("https://github.com/arshc0der/XFile_Manager"));
 }
 
