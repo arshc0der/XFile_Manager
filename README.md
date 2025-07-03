@@ -3,6 +3,10 @@
 # 📁 XFile Manager
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/arshc0der/XFile_Manager/refs/heads/main/ScreenShot/logo.png" alt="XFile Manager Logo" width="150"/>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Status-Beta-yellow.svg" alt="Status"/>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT"/>
   <img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen.svg" alt="Open Source"/>
@@ -24,6 +28,11 @@
 ---
 
 ## 🧭 About the Project
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/arshc0der/XFile_Manager/refs/heads/main/ScreenShot/preview1.png" width="45%" alt="Preview 1"/>
+  <img src="https://raw.githubusercontent.com/arshc0der/XFile_Manager/refs/heads/main/ScreenShot/preview2.png" width="45%" alt="Preview 2"/>
+</p>
 
 **XFile Manager** is a minimal, clean, and fast Qt-based file explorer, purpose-built for **structured environments** like organizations, schools, shared offices, or kiosks—where **end-users are not meant to modify files**, but only **view or explore** them.
 
