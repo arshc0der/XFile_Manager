@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>831</width>
-    <height>598</height>
+    <width>757</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,7 @@
    </iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgba(38, 34, 39, 23); /* Slightly transparent for a blur-like effect */
-color: rgb(255, 255, 255); /* White text color */</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -81,7 +80,7 @@ QScrollBar::sub-line:horizontal {
          <enum>QLayout::SizeConstraint::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QGroupBox" name="groupBox">
+         <widget class="QFrame" name="frame">
           <property name="minimumSize">
            <size>
             <width>200</width>
@@ -95,40 +94,7 @@ QScrollBar::sub-line:horizontal {
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-background-color: rgb(0, 0, 0);/* Default background color */
- color: rgb(122, 122, 122);            /* Default text color */
-border:none;
-outline:none;
-border-radius:6px;
-text-align:left;
-padding-left:4px;
-padding-top:10px;
-padding-bottom:10px;
-}
-QPushButton:hover {
-background-color: rgb(65, 65, 65) /* Default background color */
-}
-QPushButton:pressed,
-QPushButton:focus {
-    background-color: #252126; /* Background color when selected */
-    color: #FFFFFF;            /* Text color when selected */
-}
-outline:none;
-border:none;
-</string>
-          </property>
-          <property name="title">
-           <string>Favourites</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-          <property name="checkable">
-           <bool>false</bool>
+           <string notr="true"/>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_5">
            <property name="spacing">
@@ -377,28 +343,7 @@ border:none;
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-background-color: rgb(0, 0, 0);/* Default background color */
- color: rgb(122, 122, 122);            /* Default text color */
-border:none;
-outline:none;
-border-radius:6px;
-text-align:left;
-padding-left:4px;
-padding-top:10px;
-padding-bottom:10px;
-}
-QPushButton:hover {
-background-color: rgb(65, 65, 65) /* Default background color */
-}
-QPushButton:pressed,
-QPushButton:focus {
-    background-color: #252126; /* Background color when selected */
-    color: #FFFFFF;            /* Text color when selected */
-}
-outline:none;
-border:none;
-</string>
+           <string notr="true"/>
           </property>
           <property name="title">
            <string>System</string>
@@ -593,7 +538,7 @@ border:none;
              </sizepolicy>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #252126;</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Copy Path</string>
@@ -609,7 +554,7 @@ border:none;
              </sizepolicy>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #252126;</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string/>
@@ -624,76 +569,62 @@ border:none;
          </layout>
         </item>
         <item>
-         <widget class="QListView" name="listView">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="maximumSize">
+         <widget class="QFrame" name="gridFrame">
+          <property name="minimumSize">
            <size>
-            <width>16777215</width>
-            <height>16777215</height>
+            <width>0</width>
+            <height>100</height>
            </size>
           </property>
-          <property name="styleSheet">
-           <string notr="true">QListView {
-            background-color: #252126;
-            color: rgb(255, 255, 255);
-        }
-        QListView::item {
-            padding: 10px; /* Adjust padding for items */
-        }
-        QListView::item:hover {
-            background-color: #3b2e45; /* Change to your desired hover color */
-            color: rgb(255, 255, 255); /* Text color on hover */
-        }</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QTreeView" name="treeView">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
-        QTreeView {
-            background-color: #252126;
-            color: rgb(255, 255, 255);
-        }
-        QTreeView::item {
-            padding: 10px; /* Adjust padding for items */
-        }
-        QTreeView::item:hover {
-            background-color: #3b2e45; /* Change to your desired hover color */
-            color: rgb(255, 255, 255); /* Text color on hover */
-        }</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_7">
-          <item>
-           <widget class="QListWidget" name="listWidget">
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>120</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QListView" name="listView">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QTreeView" name="treeView">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QListWidget" name="listWidget">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
     QPushButton {
         background-color: #252126;
 		text-align:left;
@@ -710,38 +641,42 @@ border:none;
         padding: 14px 31px; /* Slightly smaller padding when pressed */
     }
 </string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QScrollArea" name="scrollArea_system_info">
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>120</height>
-             </size>
-            </property>
-            <property name="widgetResizable">
-             <bool>true</bool>
-            </property>
-            <widget class="QWidget" name="scrollAreaWidgetContents">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>134</width>
-               <height>110</height>
-              </rect>
              </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_8">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_5"/>
-              </item>
-             </layout>
             </widget>
-           </widget>
-          </item>
-         </layout>
+           </item>
+           <item row="1" column="1">
+            <widget class="QScrollArea" name="scrollArea_system_info">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>254</width>
+                <height>118</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_5"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7"/>
         </item>
        </layout>
       </item>
@@ -754,7 +689,7 @@ border:none;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>831</width>
+     <width>757</width>
      <height>21</height>
     </rect>
    </property>
